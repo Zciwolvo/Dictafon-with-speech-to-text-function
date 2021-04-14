@@ -23,7 +23,7 @@ else:
 
 try:
     f = open("text.txt", "w+")
-    f.write(r.recognize_google(audio, language="eng-ENG"))
+    f.write(r.recognize_google(audio, language="eng-ENG"))       #you can also change language here
     print("Your text file is ready")
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")                   #that thing makes whole speech to text thing
